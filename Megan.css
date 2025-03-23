@@ -7,12 +7,13 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  cursor: url="" default;
 }
 
 #envelope {
   position: relative;
-  height: 180px;
-  width: 280px;
+  height: 380px;
+  width: 580px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   margin-left: auto;
@@ -34,18 +35,18 @@ body {
 }
 
 .flap {
-  border-top: 98px solid #ff2a22;
-  border-left: 140px solid transparent;
-  border-right: 140px solid transparent;
-  border-bottom: 82px solid transparent;
+  border-top: 198px solid #ff2a22;
+  border-left: 290px solid transparent;
+  border-right: 290px solid transparent;
+  border-bottom: 182px solid transparent;
   transform-origin: top;
 }
 
 .pocket {
-  border-left: 140px solid #ff748d;
-  border-right: 140px solid #ff748d;
-  border-bottom: 90px solid #ff98a7;
-  border-top: 90px solid transparent;
+  border-left: 290px solid #ff748d;
+  border-right: 290px solid #ff748d;
+  border-bottom: 190px solid #ff98a7;
+  border-top: 190px solid transparent;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -168,7 +169,7 @@ body {
 }
 .a2 {
   left: 55%;
-  transform: scale(1);
+  transform: scale(0.85);
   opacity: 1;
   animation: slideUp 5s linear 1, sideSway 4s  ease-in-out 2 alternate;
   animation-fill-mode: forwards;
@@ -182,8 +183,41 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.7s;
 }
+.a4 {
+  left: 25%;
+  transform: scale(0.5);
+  opacity: 1;
+  animation: slideUp 7s linear 1, sideSway 3s  ease-in-out 4 alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+.a5 {
+  left: 60%;
+  transform: scale(0.75);
+  opacity: 1;
+  animation: slideUp 8s linear 1, sideSway 4s  ease-in-out 3 alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+.a6 {
+  left: 15%;
+  transform: scale(0.5);
+  opacity: 1;
+  animation: slideUp 6s linear 1, sideSway 1s  ease-in-out 6 alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
 
 @keyframes slideUp {
+  0% {
+  top: 0;
+  }
+  100% {
+      top: -600px;
+  }
+}
+
+@keyframes slideDown {
   0% {
   top: 0;
   }
@@ -237,21 +271,6 @@ body {
   color:rgb(20, 20, 20);
   font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .loader {
